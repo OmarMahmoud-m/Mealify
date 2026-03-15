@@ -136,29 +136,39 @@ nav a {
   color: #ce1212;
 }
 
-.icon i {
-  transition: color 0.5s;
-}
+
 .watch-video:hover .icon i {
   color: #ce1212;
 }
+
+.icon i {
+  transition: color 0.5s;
+  z-index: 2;
+}
+
 
 .icon {
   color: rgb(33, 37, 41);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
   width: 40px;
   height: 40px;
   text-align: center;
   border-radius: 50%;
   position: relative;
   margin-right: 20px;
-  border: 6px solid transparent;
-  border-left: 6px solid #ce1212;
-  border-top: 6px solid #ce1212;
-  border-bottom: 6px solid #ce1212;
+  background-image: linear-gradient(to right ,#CE1212 0 50% , transparent 50% 100%);
+  
+}
+
+.icon::before{
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .right-hero-section img {
