@@ -223,6 +223,7 @@ nav a {
   transition: transform 0.3s;
   position: relative;
   overflow: hidden;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0,  0.2);
 }
 
 .chef-card:hover {
@@ -439,7 +440,6 @@ iframe {
   margin-top: 30px;
   margin-bottom: 50px;
   padding-bottom: 50px;
-  box-shadow: ;
 }
 
 form {
@@ -451,8 +451,7 @@ form {
     "item4 item4 item4 item4 item4 item4"
     "item4 item4 item4 item4 item4 item4"
     " . . item5 item5 . .";
-  width: 100%;
-
+  width: 101%;
   gap: 10px;
 }
 
